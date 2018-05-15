@@ -152,13 +152,13 @@ data(reunion)
 # Smoothing all variables for Reunion (Lissage de toutes les variables pour la Reunion)
 
 # Call mode 1: classic smoothing - automatic grid
-reunionSmoothed <- kernelSmoothing( dfObservations = dfReunion
+reunionSmoothed <- kernelSmoothing( dfObservations = reunion
                                   , sEPSG = "32740"
                                   , iCellSize = 200L
                                   , iBandwidth = 400L)
 
 # Call mode 2: median smoothing - automatic grid
-reunionSmoothed <- kernelSmoothing( dfObservations = dfReunion
+reunionSmoothed <- kernelSmoothing( dfObservations = reunion
                                   , sEPSG = "32740"
                                   , iCellSize = 200L
                                   , iBandwidth = 400L
@@ -167,14 +167,14 @@ reunionSmoothed <- kernelSmoothing( dfObservations = dfReunion
 # Call mode 3: classic smoothing - user grid
 dfCentroidsUser <- merge( x = seq(from =  314400L, to =  378800L, by = 200L)
                         , y = seq(from = 7634000L, to = 7691200L, by = 200L))
-reunionSmoothed <- kernelSmoothing( dfObservations = dfReunion
+reunionSmoothed <- kernelSmoothing( dfObservations = reunion
                                   , sEPSG = "32740"
                                   , iCellSize = 200L
                                   , iBandwidth = 400L
                                   , dfCentroids = dfCentroidsUser)
 
 # Call mode 4: median smoothing - user grid
-reunionSmoothed <- kernelSmoothing( dfObservations = dfReunion
+reunionSmoothed <- kernelSmoothing( dfObservations = reunion
                                   , sEPSG = "32740"
                                   , iCellSize = 200L
                                   , iBandwidth = 400L
