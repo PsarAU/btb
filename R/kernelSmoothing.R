@@ -142,7 +142,7 @@ kernelSmoothing <-
         stop("Invalid quantiles values")
     }    
     
-    cat("fin contrôles:", Sys.time() - debut, "\n")
+    cat("fin controles:", Sys.time() - debut, "\n")
     debut <- Sys.time()
     
     if (is.null(dfCentroids))
