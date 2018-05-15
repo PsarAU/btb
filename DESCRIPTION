@@ -4,12 +4,11 @@ Type: Package
 Title: Beyond the Border
 Version: 0.1.21
 Depends: R (>= 3.3.0)
-Date: 2018-01-08
+Date: 2018-05-02
 Author: Thierry Cornely, Laure Genebes, Arlindo Dos Santos, Cynthia Faivre,
     Auriane Renaud, Farida Marouchi and Francois Semecurbe
 Maintainer: Arlindo Dos Santos <Arlindo.Dos-Santos@insee.fr>
 Description: Kernel density estimation dedicated to urban geography.
-Suggests: rgdal, rgeos, RUnit, knitr
 License: GPL (>= 2)
 Imports: methods, Rcpp (>= 0.11.3), sp, sf, RcppParallel
 LinkingTo: Rcpp, RcppParallel, BH (>= 1.60.0-1), RcppArmadillo
@@ -18,4 +17,4 @@ Packaged: 2018-01-08 15:30:00 UTC; S3QCEA
 RoxygenNote: 5.0.1
 LazyData: true
 Repository: CRAN
-Date/Publication: 2018-01-08 15:30:00 UTC
+Date/Publication: 2018-05-02 15:30:00 UTC
