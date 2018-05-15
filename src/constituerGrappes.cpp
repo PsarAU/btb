@@ -207,7 +207,7 @@ arma::Mat<int> constituerGrappes2(const unsigned int iNbObsMin, const arma::Mat<
   
   if(profondeurMax >= 16)
   {
-    std::cerr << "makeClusterObsMin does not allow matrix greater than 32768 x 32768 to prevent overflow in R integer 2^32"; 
+    Rcpp::Rcerr << "makeClusterObsMin does not allow matrix greater than 32768 x 32768 to prevent overflow in R integer 2^32"; 
     return mGrappe;
   }
   
@@ -219,7 +219,7 @@ arma::Mat<int> constituerGrappes2(const unsigned int iNbObsMin, const arma::Mat<
   }
   catch(const std::exception & e)
   {
-    std::cerr << "Exception in makeClusterObsMin: " << e.what(); 
+    Rcpp::Rcerr << "Exception in makeClusterObsMin: " << e.what(); 
   }
   
   return mGrappe;
@@ -402,7 +402,7 @@ arma::Mat<int> constituerGrappes(const unsigned int iNbObsMin, const arma::Mat<i
   
   if(profondeurMax >= 16)
   {
-    std::cerr << "makeClusterObsMin does not allow matrix greater than 32768 x 32768 to prevent overflow in R integer 2^32"; 
+    Rcpp::Rcerr << "makeClusterObsMin does not allow matrix greater than 32768 x 32768 to prevent overflow in R integer 2^32"; 
     return mGrappe;
   }
   
@@ -414,7 +414,7 @@ arma::Mat<int> constituerGrappes(const unsigned int iNbObsMin, const arma::Mat<i
   }
   catch(const std::exception & e)
   {
-    std::cerr << "Exception in makeClusterObsMin: " << e.what(); 
+    Rcpp::Rcerr << "Exception in makeClusterObsMin: " << e.what(); 
   }
   
   // Rcout << mGrappe;
